@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>All Arms Veterans Motorcycle Club</title>
+		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="js/jquery.galereya.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/aavmcc.css" rel="stylesheet">
+		<link href="css/jquery.galereya.css" rel="stylesheet">
+		<script>
+			$(document).ready(function() {
+				$('#gal1').galereya({
+					wave:false
+				});
+				$('#login-link').click(function(evt){
+					evt.preventDefault();
+					$('#user-login').slideToggle();
+				});
+			}); 
+		</script>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a class="hvr-underline-from-left " href="/aav/" title="">Home</a></li>
+				<li><a class="hvr-underline-from-left" href="#about-us" title="">About Us</a></li>
+				<li><a class="hvr-underline-from-left" href="#events">Events</a></li>
+				<li><a class="hvr-underline-from-left" href="#gallery" title="">Photowall</a></li>
+				<li><a class="hvr-underline-from-left" href="#useful-links" title="">Useful links</a></li>
+				<li><a class="hvr-underline-from-left" href="/aav/forum" title="">Forum</a></li>
+				<li><a class="hvr-underline-from-left active" href="guestbook.html" title="">Guestbook</a></li>
+				<li id="login-link"><a href="./user/register">Login</a></li>
+			</ul>
+			<form action="/aav/" method="post" id="user-login" accept-charset="UTF-8">
+				<div>
+					<div class="form-item form-type-textfield form-item-name">
+					  <label for="edit-name--2">Username <span class="form-required" title="This field is required.">*</span></label>
+					 <input type="text" id="edit-name--2" name="name" value="" size="60" maxlength="60" class="form-text required">
+</div>
+<div class="form-item form-type-password form-item-pass">
+  <label for="edit-pass--2">Password <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" id="edit-pass--2" name="pass" size="60" maxlength="128" class="form-text required">
+</div>
+<input type="hidden" name="form_build_id" value="form--kDXloORdP0L4gTwOqrIZt8z4orybVAzYS-LVmva1tw">
+<input type="hidden" name="form_id" value="user_login">
+<div class="form-actions form-wrapper" id="edit-actions--2">
+<input type="submit" id="edit-submit--2" name="op" value="Log in" class="form-submit btn btn-primary"></div></div></form>
+		</nav>
+		<header id="main-header">
+			<h1>All Arms Veterans MotorCycle Club</h1>
+			<blockquote>
+				We few, we happy few, we band of brothers;<br>For he today that sheds his blood with me shall be my brother
+			</blockquote>
+		</header>
+		<main class="container-fluid">
+<div class="guestbook row bg-black-80"><form action="/guestbook" method="post" id="guestbook-form-entry-form" accept-charset="UTF-8"><div><h3>Add guestbook entry</h3><div class="form-item form-type-textfield form-item-anonname">
+  <label for="edit-anonname">Name <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-anonname" name="anonname" value="" size="32" maxlength="64" class="form-text required">
+</div>
+<div class="form-item form-type-textfield form-item-anonemail">
+  <label for="edit-anonemail">E-mail </label>
+ <input type="text" id="edit-anonemail" name="anonemail" value="" size="32" maxlength="128" class="form-text">
+</div>
+<div class="form-item form-type-textfield form-item-anonwebsite">
+  <label for="edit-anonwebsite">Homepage </label>
+ <input type="text" id="edit-anonwebsite" name="anonwebsite" value="" size="32" maxlength="128" class="form-text">
+</div>
+<div class="text-format-wrapper"><div class="form-item form-type-textarea form-item-message-value">
+  <label for="edit-message-value">Message <span class="form-required" title="This field is required.">*</span></label>
+ <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea"><textarea id="edit-message-value" name="message[value]" cols="60" rows="8" class="form-textarea required"></textarea><div class="grippie"></div></div>
+</div>
+<fieldset class="filter-wrapper form-wrapper" id="edit-message-format"><div class="fieldset-wrapper"><div class="filter-help form-wrapper" id="edit-message-format-help"><p><a href="/filter/tips" target="_blank">More information about text formats</a></p></div><div class="filter-guidelines form-wrapper filter-guidelines-processed" id="edit-message-format-guidelines"><div class="filter-guidelines-item filter-guidelines-plain_text"><h3 style="display: none;">Plain text</h3><ul class="tips"><li>No HTML tags allowed.</li><li>Web page addresses and e-mail addresses turn into links automatically.</li><li>Lines and paragraphs break automatically.</li></ul></div></div></div></fieldset>
+</div>
+<input type="hidden" name="form_build_id" value="form-YeRb2kUyk6J82DTBW-R5m_EqaSt4msVoBFnVGVYwTTc">
+<input type="hidden" name="form_id" value="guestbook_form_entry_form">
+<fieldset class="captcha form-wrapper"><legend><span class="fieldset-legend">CAPTCHA</span></legend><div class="fieldset-wrapper"><div class="fieldset-description">This question is for testing whether or not you are a human visitor and to prevent automated spam submissions.</div><input type="hidden" name="captcha_sid" value="6104">
+<input type="hidden" name="captcha_token" value="ffb17bf8a5e8825324f3227e086b8257">
+<img src="http://www.aavmcc.co.uk/image_captcha?sid=6104&amp;ts=1475419931" width="180" height="60" alt="Image CAPTCHA" title="Image CAPTCHA"><div class="form-item form-type-textfield form-item-captcha-response">
+  <label for="edit-captcha-response">What code is in the image? <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-captcha-response" name="captcha_response" value="" size="15" maxlength="128" class="form-text required" autocomplete="off">
+<div class="description">Enter the characters shown in the image.</div>
+</div>
+</div></fieldset>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Send" class="btn btn-primary form-submit"></div></div></form>
+<div class="guestbook-entry clear-block even">
+<b>Steve Waine</b><div class="submitted">Tue, 2016-09-13 09:53&nbsp;|&nbsp;<a href="mailto:Steven.waine123@BT Internet. Com">E-mail</a></div><div class="guestbook-message"><p>Hi, I would be very interested to join the AAVMCC, I served 6 years with the RAndroid and 2 years as a junior. I live in the Southampton area, would it be possible to give me a contact Name and number?<br>
+Many thanks<br>
+Steve</p>
+</div><div class="guestbook-comment"><div class="guestbook-comment-submitted">Comment by Pilgrim</div><div class="guestbook-comment-content"><p>Hi Steve give our Sec an e-mail <a href="mailto:secretary@aavmcc.co.uk">secretary@aavmcc.co.uk</a> cheers Danny VP</p>
+</div></div>
+</div>
+<div class="guestbook-entry clear-block odd">
+<b>Bob Blake</b><div class="submitted">Tue, 2016-08-30 13:02&nbsp;|&nbsp;<a href="mailto:guitarbuyer60@hotmail.co.uk">E-mail</a></div><div class="guestbook-message"><p>Hi i met one of your members today, ex RAF in Joe's Cafe Upwell, Triumph Motorbike, great talking to you it brought back some good memories.<br>
+On facebook if you would like to keep in touch, will be following the site, Great Work to all of you.<br>
+Bob<br>
+with all the Tattoos</p>
+</div>
+</div>
+<div class="guestbook-entry clear-block even">
+<b>Graham Barber</b><div class="submitted">Sun, 2016-04-24 19:06&nbsp;|&nbsp;<a href="mailto:gjlb1965@aol.com">E-mail</a>&nbsp;|&nbsp;<a href="http://www.RMA-Riders.uk">Website</a>&nbsp;</div><div class="guestbook-message"><p>Massive thank you to all the Wiltshire AAVMCC members who supported the Wino's Crew MC Wiltshire's fund raising ride, BBQ and raffle in aid of the Royal Marines Association Riders. £475 was raised which will be donated to Sgt Al Blackman RM's wife Claire. Special thanks also go to HAMC Nomads England for use of their club house as the starting RV.</p>
+</div>
+</div>
+<div class="guestbook-entry clear-block odd">
+<b>Peter May</b><div class="submitted">Sun, 2016-04-10 17:04&nbsp;|&nbsp;<a href="mailto:pamelamay@sky.com">E-mail</a></div><div class="guestbook-message"><p>Be good to see some of you at our event in Bognor..........Bad Wabbit 5th Year Anniversary Shindig. Saturday 11th June 2016 at Newtown Sports and Social Club, 16a Greencourt Drive, Bognor Regis, West Sussex, PO21 5EU. 12 Noon till late. Cheap drink, food, stalls, bike show, free camping Saturday night and an evening of live music. £5 entry with proceeds to Dreams Come True charity for children with serious and life limiting conditions. <a href="http://www.bad-wabbit-crew.co.uk">www.bad-wabbit-crew.co.uk</a> or find Bad Wabbit Shindig on Facebook.</p>
+</div>
+</div>
+<div class="guestbook-entry clear-block even">
+<b>Michael E.Field</b><div class="submitted">Sun, 2016-03-20 11:56&nbsp;|&nbsp;<a href="mailto:michael.e.field@gmail.com">E-mail</a></div><div class="guestbook-message"><p>Trying to login ,  no chance.. I'm not a member,,   But , I would like to know and if I should join..  I live in S.Germany,  I served in the REME.    I have no idea as to what other qualifications I need.. haha  Oh , yes  I'm a Biker..    Mike</p>
+</div><div class="guestbook-comment"><div class="guestbook-comment-submitted">Comment by Fish</div><div class="guestbook-comment-content"><p>Hi Mike,</p>
+<p>Send the Sec an email as per the Home page if you would like to know more.<br>
+Respects,<br>
+Fish<br>
+VP AAV</p>
+</div></div>
+</div>
+<div class="guestbook-entry clear-block odd">
+<b>TDM Sapper</b><div class="submitted">Sun, 2016-02-28 19:55&nbsp;|&nbsp;<a href="mailto:tim.prentice@tiscali.co.uk">E-mail</a></div><div class="guestbook-message"><p>Bumped into Paul Combes &amp; Some of Your members at the MMA today top man Paul Much ReSpect for you Brother &amp; thank you very much for the Invite muchly apprecaite it you do realise it will be feckin messy if we get pissed together again lol lol &amp; dont let your bloody dogs bite me this time pmsl</p>
+</div>
+</div>
+<div class="guestbook-entry clear-block even">
+<b>Adam Whitbread</b><div class="submitted">Sun, 2016-01-31 13:44&nbsp;|&nbsp;<a href="mailto:adam_whitbread@hotmail.com">E-mail</a></div><div class="guestbook-message"><p>Good to finally have a few beers with you at the Ogri Kick Start Rally.  Looking forward to the Not Forgotten Rally and anything else in between.</p>
+<p>Kind regards</p>
+<p>Adam</p>
+</div>
+</div>
+<div class="guestbook-entry clear-block odd">
+<b>ROB 'Knocker'</b><div class="submitted">Sat, 2016-01-09 18:07&nbsp;|&nbsp;<a href="mailto:stumpyleg@btinternet.com">E-mail</a></div><div class="guestbook-message"><p>To the President / VP / Reps /  &amp; All Members of the AAV,</p>
+<p>Saddened to learn today of Andy's Death.<br>
+Have some great memories of riding with Andy the club  and partying....<br>
+RIP Andy.<br>
+Condolences to his family and friends.</p>
+<p>L&amp;R<br>
+Knocker. (Rob)</p>
+</div><div class="guestbook-comment"><div class="guestbook-comment-submitted">Comment by Rocket</div><div class="guestbook-comment-content"><p>Thanks Knocker He was taken too soon bro</p>
+</div></div>
+</div>
+<div class="guestbook-entry clear-block even">
+<b>Dutch Forces</b><div class="submitted">Tue, 2015-12-15 16:15&nbsp;|&nbsp;<a href="mailto:dutchforces@hotmail.com">E-mail</a>&nbsp;|&nbsp;<a href="http://www.dutchforces.mcc.nl">Website</a>&nbsp;</div><div class="guestbook-message"><p>We want to wish the AAVMCC a merry Christmas and all the best for 2016. L&amp;R Dutch Forces</p>
+</div>
+</div>
+<div class="guestbook-entry clear-block odd">
+<b>Dig In North West </b><div class="submitted">Sat, 2015-10-03 10:18&nbsp;|&nbsp;<a href="mailto:info@diginnorthwest.org">E-mail</a>&nbsp;|&nbsp;<a href="http://www.diginnorthwest.org">Website</a>&nbsp;</div><div class="guestbook-message"><p>Thank you so much to the members of the AAVMCC who attended the party at The Canberra Club, BAE, Balderstone.  Your donation to Dig In via your raffle is very much appreciated, and will make a significant difference to the veterans that we support here in Preston and the surrounding area. </p>
+<p>If we may, we would like to put the money towards a trip we are organising at the moment which involves the chance to walk with wolves in the Cumbrian countryside.  This will give the team the chance to experience something new, and provide valuable distraction from uninvited thoughts.</p>
+<p>Again, our sincere thanks.</p>
+</div><div class="guestbook-comment"><div class="guestbook-comment-submitted">Comment by TANGO</div><div class="guestbook-comment-content"><p>We would be more than happy for you to use the funds for this charity in any way you see fit.<br>
+We hope to see you in the future so that our Southern Members can enjoy more Northern Hospitality.</p>
+<p>Regards,</p>
+<p>Fish<br>
+Vice President<br>
+AAVMCC</p>
+</div></div>
+</div>
+<div class="guestbook-entry clear-block even">
+<b>stephen</b><div class="submitted">Sun, 2015-09-13 15:26&nbsp;|&nbsp;<a href="mailto:stephen105@ymail.com">E-mail</a>&nbsp;|&nbsp;<a href="http://membership ">Website</a>&nbsp;</div><div class="guestbook-message"><p>hi , I was wanting to know if you have a chapter in N Ireland as id be interested in joining your club .<br>
+ive  p/t two half yrs served in the army</p>
+</div><div class="guestbook-comment"><div class="guestbook-comment-submitted">Comment by Dixie</div><div class="guestbook-comment-content"><p>Hi could you please email the secretary on <a href="mailto:secretary@aavmcc.co.uk">secretary@aavmcc.co.uk</a><br>
+Many thanks<br>
+Dixie</p>
+</div></div>
+</div>
+<div class="guestbook-entry clear-block odd">
+<b>Ian</b><div class="submitted">Sat, 2015-08-29 07:56&nbsp;|&nbsp;<a href="mailto:Meds40@hotmail">E-mail</a></div><div class="guestbook-message"><p>Hi,<br>
+Great meeting some great guys at the Patriot last night.</p>
+</div>
+</div>
+<div class="guestbook-entry clear-block even">
+<b>F Lynch-Smith</b><div class="submitted">Thu, 2015-08-27 17:20&nbsp;|&nbsp;<a href="mailto:lynchsmith@hotmail.co.uk">E-mail</a></div><div class="guestbook-message"><p>27th August  2015</p>
+<p>Dear President,</p>
+<p>Meriden Megaride: Sunday, 26th June 2016</p>
+<p>I am writing on behalf of the Rotary Club of Meriden and the Triumph Owners Club, [Meriden Branch], to ask you include our twelfth annual MEGARIDE in your club calendar.</p>
+<p>The Megaride raises money for The Air Ambulance Service, (and next year for Marie Curie Cancer care), by asking riders to make a minimum donation of £6 to enter for the ride-in-convoy from Alcester to the event in Meriden.</p>
+<p>Once at The Queen’s Head in Meriden, riders will be entertained by a rock band, trade stands, stalls &amp; attractions and the sensational ‘No-where Else Auction’ featuring motor-cycling memorabilia.</p>
+<p>Riders can also vote for the Best Classic and Best Modern bikes with trophies presented on the day.</p>
+<p>Refreshments are available from the tea tents - and the pub – and there is adjacent camping &amp; local B&amp;Bs.</p>
+<p>Please check out the web-site for more details and on-line registration or contact Neville Riley: <a href="mailto:neville-riley@uwclub.net">neville-riley@uwclub.net</a></p>
+<p>Regards,<br>
+		Frances</p>
+<p> [<a href="mailto:lynchsmith@hotmail.co.uk">lynchsmith@hotmail.co.uk</a>]</p>
+</div>
+</div>
+<div class="guestbook-entry clear-block odd">
+<b>Duncan Windsor </b><div class="submitted">Sat, 2015-08-22 11:28&nbsp;|&nbsp;<a href="mailto:duncanontour@hotmail.co.uk">E-mail</a></div><div class="guestbook-message"><p>Just a quick thank you to Dan Sgt at Arms South.<br>
+Good to meet you at the M&amp;P open day a few weekends ago, thank you for the chat , great to meet ex service men with a passion for bikes.<br>
+Very interested in learning more about the MCC miss the brotherhood of serving.<br>
+Kind regards<br>
+Duncan Windsor Ex RSM R Sigs 22yrs</p>
+</div>
+</div>
+<div class="guestbook-entry clear-block even">
+<b>Gil. Wheeler</b><div class="submitted">Wed, 2015-08-19 11:37&nbsp;|&nbsp;<a href="mailto:Gil@wheelersevents.co.uk">E-mail</a>&nbsp;|&nbsp;<a href="http://www.wheelersevents.co.uk">Website</a>&nbsp;</div><div class="guestbook-message"><p>The Tank museum in association with Wheelers Motorcycle Events bring you the "Wheels of Steel" ride-in and show on Sunday 6th September 15 at the Tank Museum, Bovington, Dorset. BH20 6JG trade stands available by calling the museums event team on 01929 405096</p>
+</div>
+</div>
+<div class="guestbook-entry clear-block odd">
+<b>Danny williams</b><div class="submitted">Sat, 2015-08-15 21:53&nbsp;|&nbsp;<a href="mailto:Dannydubz87@gmail.com">E-mail</a></div><div class="guestbook-message"><p>Still serving I've done 9 years with 7 Para RHA based in Colchester Essex<br>
+Really interested in joining a club like this couldn't make the last rally due to work.<br>
+If there's anyone who heads up my region and could point me in the right direction would be much appreciated cheers.</p>
+</div><div class="guestbook-comment"><div class="guestbook-comment-submitted">Comment by Paul</div><div class="guestbook-comment-content"><p>Danny,</p>
+<p>I have sent you an email.</p>
+<p>thanks</p>
+<p>Paul</p>
+</div></div>
+</div>
+<div class="guestbook-entry clear-block even">
+<b>Simon</b><div class="submitted">Sat, 2015-08-15 15:58&nbsp;|&nbsp;<a href="mailto:Darkminddesign@gmail.com ">E-mail</a></div><div class="guestbook-message"><p>Hi, Nice to see some of your members who came over to Pinewood Cafe Bracknell last week for the funeral of an ex serviceman. I'm ex RN, served from 1884 to 1991. Weapon Engineer Mechanic (Radio) Service number D202141C. Are there any members close tome in Bracknell? I'd like to talk to someone about the possibility of tagging along and finding out a little more about you.</p>
+</div><div class="guestbook-comment"><div class="guestbook-comment-submitted">Comment by Paul</div><div class="guestbook-comment-content"><p>Hi Simon,</p>
+<p>Thanks for reaching out, a rep from your area will be in touch.</p>
+<p>best</p>
+<p>Paul</p>
+</div></div>
+</div>
+<div class="guestbook-entry clear-block odd">
+<b>Jason (michigan avenue)</b><div class="submitted">Sun, 2015-08-09 10:55&nbsp;|&nbsp;<a href="mailto:Tokyoevansfamily@yahoo.co.uk">E-mail</a></div><div class="guestbook-message"><p>Just to say thanks for having us (michigan avenue) play at the aav rally this year.  We had a great time and loved meeting you all - really friendly relaxed bunch of blokes and ladies.</p>
+<p>Hope to see you all again in the future.</p>
+</div>
+</div>
+<div class="guestbook-entry clear-block even">
+<b>Dave - Pres RENEGADE MC</b><div class="submitted">Thu, 2015-07-30 12:39&nbsp;|&nbsp;<a href="http://www.renegademc.com">Website</a>&nbsp;</div><div class="guestbook-message"><p>Great weekend and great company.<br>
+Many thanks for your hospitality over the weekend.<br>
+Good to meet up with you all again.<br>
+L&amp;R<br>
+Dave<br>
+President<br>
+RENEGADE MC</p>
+</div><div class="guestbook-comment"><div class="guestbook-comment-submitted">Comment by Paul</div><div class="guestbook-comment-content"><p>Thanks Dave,<br>
+Appreciate you guys braving the weather!</p>
+<p>Great to see you all as always.</p>
+<p>Guns<br>
+Area Rep</p>
+</div></div>
+</div>
+<div class="guestbook-entry clear-block odd">
+<b>Donna Darbyshire </b><div class="submitted">Tue, 2015-07-28 12:54&nbsp;|&nbsp;<a href="mailto:Donnagreenacre@hotmail.com ">E-mail</a></div><div class="guestbook-message"><p>An impromptu invite for a few drinks at a rugby club turned out to be an amazing Not Forgotten Rally 15. Thank you so much for making me feel so welcome. I have met some amazing people and am actively looking at joining your wonderful club.</p>
+</div>
+</div><h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-current first">1</li>
+<li class="pager-item"><a title="Go to page 2" href="/guestbook?page=1">2</a></li>
+<li class="pager-item"><a title="Go to page 3" href="/guestbook?page=2">3</a></li>
+<li class="pager-item"><a title="Go to page 4" href="/guestbook?page=3">4</a></li>
+<li class="pager-next"><a title="Go to next page" href="/guestbook?page=1">next ›</a></li>
+<li class="pager-last last"><a title="Go to last page" href="/guestbook?page=3">last »</a></li>
+</ul></div></div>		</main>
+		<footer>
+		</footer>
+	</body>
+</html>

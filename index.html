@@ -13,8 +13,21 @@
 		<link href="css/jquery.galereya.css" rel="stylesheet">
 		<script>
 			$(document).ready(function() {
-				$('#gal1').galereya({
-					wave:false
+			//	$('#gal1').galereya({
+			//		wave:false
+			//	});
+				$('#login-link').click(function(evt){
+					evt.preventDefault();
+					$('#user-login').slideToggle();
+				});
+				if ($('.guestbook').length) {
+					$('.guestbook').addClass('row bg-black-80');
+				};			
+				$('.brick').on('mouseover', 'a', function() {
+					$('#useful-link-description').html($(this).next('h3').html()).slideDown();
+				});
+				$('.brick').on('mouseout', 'a', function() {
+					$('#useful-link-description').fadeOut();
 				});
 			}); 
 		</script>
@@ -28,17 +41,32 @@
 				<li><a class="hvr-underline-from-left" href="#gallery" title="">Photowall</a></li>
 				<li><a class="hvr-underline-from-left" href="#useful-links" title="">Useful links</a></li>
 				<li><a class="hvr-underline-from-left" href="/aav/forum" title="">Forum</a></li>
-				<li><a class="hvr-underline-from-left" href="/aav/guestbook" title="">Guestbook</a></li>
+				<li><a class="hvr-underline-from-left" href="guestbook.html" title="">Guestbook</a></li>
+				<li id="login-link"><a href="./user/register">Login</a></li>
 			</ul>
+			<form action="/aav/" method="post" id="user-login" accept-charset="UTF-8">
+				<div>
+					<div class="form-item form-type-textfield form-item-name">
+					  <label for="edit-name--2">Username <span class="form-required" title="This field is required.">*</span></label>
+					 <input type="text" id="edit-name--2" name="name" value="" size="60" maxlength="60" class="form-text required">
+</div>
+<div class="form-item form-type-password form-item-pass">
+  <label for="edit-pass--2">Password <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" id="edit-pass--2" name="pass" size="60" maxlength="128" class="form-text required">
+</div>
+<input type="hidden" name="form_build_id" value="form--kDXloORdP0L4gTwOqrIZt8z4orybVAzYS-LVmva1tw">
+<input type="hidden" name="form_id" value="user_login">
+<div class="form-actions form-wrapper" id="edit-actions--2">
+<input type="submit" id="edit-submit--2" name="op" value="Log in" class="form-submit btn btn-primary"></div></div></form>
 		</nav>
 		<header id="main-header">
-			<h1>All Arms Veterans Motorcyle Club</h1>
+			<h1>All Arms Veterans MotorCycle Club</h1>
 			<blockquote>
-				We few, we happy few, we band of brothers;<br>For he to-day that sheds his blood with me shall be my brother
+				We few, we happy few, we band of brothers;<br>For he today that sheds his blood with me shall be my brother
 			</blockquote>
 		</header>
 		<main class="container-fluid">
-			<article id="about-us" class="row">
+			<article id="about-us" class="row bg-black-80">
 				<header>
 					<h2>About Us</h2>
 				</header>
@@ -53,7 +81,119 @@
 					</div>
 				</section>
 			</article>
-			<article id="gallery">
+			<div class="row bg-black-80" id="club-info">
+				<article id="gbnf" class="col-lg-8">
+					<header>
+						<h2>IN MEMORIAM</h2>
+						<h3><i>Gone But Not Forgotten</i></h3>
+					</header>
+					<div class="row">
+						<img src="images/andy.jpg" alt="Andy Taylor" class="col-lg-6">
+						<img src="images/andy.jpg" alt="Andy Taylor" class="col-lg-6">
+					</div>
+				</article>
+				<article id="logo-and-motto" class="col-lg-4">
+						<header>
+							<h2>Our Logo and Motto</h2>
+							<h3><i>Pro Patria</i></h3>
+						</header>
+						<div class="content">
+							<p>The <b>wheel</b> epitomises our love for motorcycles</p>
+							<p><span class="colour-block red-block">&nbsp;</span> represents our fallen comrades who lost their lives fighting for what they believe in: <strong>their Country, Brothers and Sisters</strong></p>
+							<p>The <b>lightening bolt</b> signifies the military association</p>
+							<p><span class="colour-block yellow-block">&nbsp;</span> represents a yellow ribbon and symbolises our support for our <strong>Armed Forces</strong></p>
+							<p>Our motto, <b">Pro Patria</b>, means <b>For Country</b> for which we have all served proudly.</p>
+						</div>
+				</article>
+			</div>
+				<article id="useful-links" class="row">
+				<header class="row">
+					<h2 class="col-lg-12">Useful Links</h2>
+				</header>
+				<div class="row">
+					<div class="col-lg-2 brick">
+						<a href="http://www.helpforheroes.org.uk/">Help For Heroes</a>
+						<h3>Support for our wounded</h3>
+					</div>
+					<div class="col-lg-2 brick">
+						<a href="http://www.combatstress.org.uk/">Combat Stress</a>
+<h3>The Veterans' Mental Health Charity - 24-Hour Helpline: 0800 1381619</h3>
+					</div>
+					<div class="col-lg-2 brick">
+						<a href="http://www.blesma.org/">BLESMA</a>
+<h3>Helping limbless services and ex-service men and women for more than 75 years</h3>					
+					</div>
+	
+					<div class="col-lg-2 brick">
+						<a href="http://www.dutchforcesmcc.nl/">HDC Dutch Forces</a>
+  <h3>A club for (former) members of the Dutch Armed Forces</h3>
+					</div>
+					<div class="col-lg-2 brick">
+						<a href="http://www.thecav.ca/">Canadian Army Veterans</a>
+  <h3>A national brotherhood of Canadian Army, Air Force and Navy Veterans </h3>
+					</div>
+					<div class="col-lg-2 brick">
+						<a href="http://www.nabd.org.uk/">NABD</a>
+<h3>Charity site giving details on how to adapt your bike to cater for specific disabilities</h3>
+  					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-1 brick">&nbsp;</div>
+					<div class="col-lg-2 brick ">
+						<a href="http://www.mag-uk.org/en/index/a6296">Motorcycle Action Group</a>
+<h3>The leading riders rights organisation in the UK</h3>
+  					</div>
+					<div class="col-lg-2 brick">
+						<a href="http://www.bikerbling.co.uk/catalogue/">BikerBling</a>
+						<h3>bikerbling blurb</h3>
+					</div>
+					<div class="col-lg-2 brick">
+						<a href="http://www.righttoride.co.uk/">Right to Ride</a>
+						<h3>Support for our wounded</h3>
+					</div>
+
+					<div class="col-lg-2 brick">
+						<a href="http://www.bikersparadise.co.uk">Biker Paradise</a>
+  <h3>Custom biker jewellery hand made in England</h3>
+					</div>
+					<div class="col-lg-2 brick">
+						<a href="http://www.helpforheroes.org.uk/">another link</a>
+						<h3>link blurb</h3>
+					</div>
+					<div class="col-lg-1 brick">&nbsp;</div>
+					</div>
+									<div class="row">
+					<div class="col-lg-2 brick">
+						<a href="http://www.helpforheroes.org.uk/">Help For Heroes</a>
+						<h3>Support for our wounded</h3>
+					</div>
+					<div class="col-lg-2 brick">
+						<a href="http://www.combatstress.org.uk/">Combat Stress</a>
+<h3>The Veterans' Mental Health Charity - 24-Hour Helpline: 0800 1381619</h3>
+					</div>
+					<div class="col-lg-2 brick">
+						<a href="http://www.blesma.org/">BLESMA</a>
+<h3>Helping limbless services and ex-service men and women for more than 75 years</h3>					
+					</div>
+	
+					<div class="col-lg-2 brick">
+						<a href="http://www.dutchforcesmcc.nl/">HDC Dutch Forces</a>
+  <h3>A club for (former) members of the Dutch Armed Forces</h3>
+					</div>
+					<div class="col-lg-2 brick">
+						<a href="http://www.thecav.ca/">Canadian Army Veterans</a>
+  <h3>A national brotherhood of Canadian Army, Air Force and Navy Veterans </h3>
+					</div>
+					<div class="col-lg-2 brick">
+						<a href="http://www.nabd.org.uk/">NABD</a>
+<h3>Charity site giving details on how to adapt your bike to cater for specific disabilities</h3>
+  					</div>
+					
+				</div>
+<div id="useful-link-description"></div>
+				
+			</article>
+			<!--<article id="gallery">
 				<div id="gal1">
 					<img src="images/photos/1.jpg"
 						alt="Title here"
@@ -375,27 +515,9 @@
 						data-fullsrc="path/to/full/image."
 					/>
 				</div>
-			</article>
-			<!--<article id="logo-and-motto">
-				<div class="row">
-					<div class="col-lg-8">
-						<header>
-							<h2>Our Logo</h2>
-						</header>
-						<img src="images/logo.png">
-						<p>The <span class="green">wheel</span> epitomises our love for motorcycles</p>
-						<p><span class="red-block">&nbsp;</span> represents our fallen comrades who lost their lives fighting for what they believe in: <strong>their Country, Brothers and Sisters</strong></p>
-						<p>The <span class="green">lightening bolt</span> signifies the military association</p>
-						<p><span class="yellow-block">&nbsp;</span> represents a yellow ribbon and symbolises our support for our <strong>Armed Forces</strong></p>
-					</div>
-					<div class="col-lg-4">
-						<header>
-							<h2>Our Motto</h2>
-						</header>
-						<p>Our motto, <span class="green">Pro Patria</span>, means <span class="green">For Country</span> for which we have all served proudly.</p>
-					</div>
-				</div>
-			</article>
+			</article>-->
+			<!--
+				
 			<article>
 			<div id="block-views-eventscalendar-block-1" class="block block-views contextual-links-region">
 
@@ -420,67 +542,7 @@
   
 </div>
 			</article>
-			<article id="useful-links" class="row">
-				<header>
-					<h2>Useful Links</h2>
-				</header>
-				<div class="row-useful-links">
-					<div class="col-lg-4">
-						<a href="http://www.helpforheroes.org.uk/">Help For Heroes</a>
-						<h3>Support for our wounded</h3>
-					</div>
-					<div class="col-lg-4">
-						<a href="http://www.combatstress.org.uk/">Combat Stress</a>
-<h3>The Veterans' Mental Health Charity - 24-Hour Helpline: 0800 1381619</h3>
-					</div>
-					<div class="col-lg-4">
-						<a href="http://www.blesma.org/">BLESMA</a>
-<h3>Helping limbless services and ex-service men and women for more than 75 years</h3>					
-					</div>
-				</div>
-				<div class="row-useful-links">
-					<div class="col-lg-4">
-						<a href="http://www.dutchforcesmcc.nl/">HDC Dutch Forces</a>
-  <h3>A club for (former) members of the Dutch Armed Forces</h3>
-					</div>
-					<div class="col-lg-4">
-						<a href="http://www.thecav.ca/">Canadian Army Veterans</a>
-  <h3>A national brotherhood of Canadian Army, Air Force and Navy Veterans </h3>
-					</div>
-					<div class="col-lg-4">
-						<a href="http://www.nabd.org.uk/">NABD</a>
-<h3>Charity site giving details on how to adapt your bike to cater for specific disabilities</h3>
-  					</div>
-				</div>
-				<div class="row-useful-links">
-					<div class="col-lg-4">
-						<a href="http://www.mag-uk.org/en/index/a6296">Motorcycle Action Group</a>
-<h3>The leading riders rights organisation in the UK</h3>
-  					</div>
-					<div class="col-lg-4">
-						<a href="http://www.bikerbling.co.uk/catalogue/">BikerBling</a>
-						<h3>bikerbling blurb</h3>
-					</div>
-					<div class="col-lg-4">
-						<a href="http://www.righttoride.co.uk/">Right to Ride</a>
-						<h3>Support for our wounded</h3>
-					</div>
-				</div>
-				<div class="row-useful-links">
-					<div class="col-lg-4">
-						<a href="http://www.bikersparadise.co.uk">Biker Paradise</a>
-  <h3>Custom biker jewellery hand made in England</h3>
-					</div>
-					<div class="col-lg-4">
-						<a href="http://www.helpforheroes.org.uk/">another link</a>
-						<h3>link blurb</h3>
-					</div>
-					<div class="col-lg-4">
-						<a href="http://www.helpforheroes.org.uk/">another link</a>
-						<h3>link blurb</h3>
-					</div>
-				</div>
-			</article>-->
+-->
 		</main>
 		<footer>
 		</footer>
